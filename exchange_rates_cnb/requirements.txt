@@ -1,0 +1,5 @@
+requests-oauthlib==1.3.1
+pandas==2.1.4
+psycopg2==2.9.9
+workalendar==17.0.0
+python-dateutil==2.8.2

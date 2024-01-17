@@ -1,0 +1,21 @@
+
+version: 1
+
+models:
+  - name: stage_d_days_info_model
+    description: "A starter dbt model"
+    columns:
+      - name: date_valid
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
+
+  - name: stage_d_exchange_rates_cnb_model
+    description: "A starter dbt model"
+    columns:
+      - name: date_valid, currency_code
+        description: "The primary key for this table"
+        tests:
+          - unique
+          - not_null
