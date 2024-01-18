@@ -3,3 +3,5 @@ pandas==2.1.4
 psycopg2==2.9.9
 workalendar==17.0.0
 python-dateutil==2.8.2
+dbt-postgres==1.7.4
+prefect-dbt-flow==0.5.5

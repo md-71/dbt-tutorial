@@ -317,8 +317,8 @@ def increment(date_valid = date.today().strftime('%Y-%m-%d')): #Default date for
             print('Database connection closed.')
             return increment_done
 
-def main():
-#if __name__ == "__main__":
+
+if __name__ == "__main__":
     if sys.argv[1:] == []:
         print("Possible calls:")
         print ("your_folder_for_python\python.exe exchange_rates_cnb.py init")
