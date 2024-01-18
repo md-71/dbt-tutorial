@@ -68,11 +68,11 @@ B. Installation steps:
    3.  Switch to the folder dbt-tutorial (for example: cd C:\Users\your_user_name\Demos\dbt-tutorial)
    4.  Create virtual environment in this working folder dbt-tutorial.
        (for example: C:\Users\your_user_name\Anaconda3\python.exe -m venv dbt_msd_env)
+   5.  Activate virtual environment from working folder dbt-tutorial: dbt_msd_env\Scripts\activate
        Run command: python -m pip install --upgrade pip
        - it is for the latest version of pip
-      Run command: pip install --upgrade pip setuptools wheel
-      - it is for the latest version of tools
-   5.  Activate virtual environment from working folder dbt-tutorial: dbt_msd_env\Scripts\activate
+       Run command: pip install --upgrade pip setuptools wheel
+       - it is for the latest version of tools
    6.  Install requirements from file requirements.txt from current folder dbt-tutorial
        (for example: C:\Users\your_user_name\Anaconda3\python.exe -m pip install -r requirements.txt)
    7.  Switch to folder dbt_exchange_rates_cnb and create file database.ini here.
@@ -85,11 +85,11 @@ user=your_user
 password=your_password
        - Replace your_host, your_database, your_user, your_password with values for your database.
          User must have rights to create and drop object in your database and write to the objects.
-   8. Do init to database with using init function from python script exchange_rates_cnb.py
-       (for example: C:\Users\your_user_name\Anaconda3\python.exe exchange_rates_cnb init)
+   8.  Do init to database with using init function from python script exchange_rates_cnb.py
+       (for example: C:\Users\your_user_name\Anaconda3\python.exe exchange_rates_cnb.py init)
        - you can check data in PostgreSQL database in tables:
          public.d_exchange_rates_cnb and public.d_days_info
-   9. Create file profiles.yml in folder C:\Users\your_user_name\.dbt
+   9.  Create file profiles.yml in folder C:\Users\your_user_name\.dbt
        - replace your_user_name with your user name
        - profiles.yml will have this structure:
 dbt_exchange_rates_cnb:
@@ -151,7 +151,7 @@ dbt_exchange_rates_cnb:
          Open this link in your web browser. You will see Perfect dashboard.
        - do not close this cmd window, that prefect server is running and leave it now
    16. Open another command line window with cmd.exe command.
-   17. Switch to working folder created in step 2.
+   17. Switch to working folder as it is in example from point 3.
        (for example: cd C:\Users\your_user_name\Demos\dbt-tutorial)
    18. Activate virtual environment from working folder (dbt_msd_env\Scripts\activate)
    19. Switch to folder dbt_exchange_rates_cnb
@@ -193,4 +193,4 @@ dbt_exchange_rates_cnb:
          Flow upstream_increment is ending.
          Increment to database failed. Model dbt will not be updated.
    23. When flow from point 22. did inserting of exchange rates for current date,  you can check,
-       that dbt model is updated in PostgreSQL database and new date is present in objects - see point 16.
+       that dbt model is updated in PostgreSQL database and new date is present in objects - see point 11.
